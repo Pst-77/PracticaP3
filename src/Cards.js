@@ -9,7 +9,7 @@ function Cards(props) {
       .then((response) => response.json())
       .then((result) => {
         setcardYoGi(result.data[0]);
-        setSetName(result.data[0].card_sets[0].set_name); // assuming you want to display the first set name only
+        setSetName(result.data[0].card_sets[0].set_name); 
       })
       .catch((error) => console.log(error));
   }, [props.cardId]);
